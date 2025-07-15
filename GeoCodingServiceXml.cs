@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 public class GeoCodingServiceXml
 {
-    private const string ApiKey = "YOUR_API_KEY";
+    private const string ApiKey = "3142c79fa6a019bc472cd9bc6ecaae26";
 
     public async Task<(double lat, double lon)> GetCoordinatesAsync(string city)
     {
