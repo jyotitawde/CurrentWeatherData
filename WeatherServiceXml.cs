@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 public class WeatherServiceXml
 {
-    private const string ApiKey = "3142c79fa6a019bc472cd9bc6ecaae26";
+    private const string ApiKey = "YOUR_API_KEY";
     private static readonly HttpClient client = new HttpClient()
     {
         Timeout = TimeSpan.FromSeconds(10) // ⏳ Sets request timeout to 10 seconds
