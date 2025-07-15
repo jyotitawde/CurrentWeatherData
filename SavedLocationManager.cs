@@ -19,7 +19,8 @@ public class SavedLocationManager
     public void SaveCity(string city)
     {
         var cities = LoadSavedCities();
-        if (!cities.Contains(city))
+        
+        if (!cities.Contains(city, StringComparer.OrdinalIgnoreCase))
         {
             cities.Add(city);
             File.WriteAllText(filePath, JsonSerializer.Serialize(cities));
